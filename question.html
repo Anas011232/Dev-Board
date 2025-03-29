@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF] "> 
+    <main class="max-w-screen-xl mx-auto px-4 pt-5 pb-10">
+        <section class="bg-white flex justify-between rounded-xl px-2">
+            <nav class="flex justify-center items-center gap-2 ml-4">
+                <img src="assets/logo.png" alt="" class="w-[40px] h-[40px]">
+                <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+            </nav>
+            <div class="p-5">
+                <button id="desk" class="text-white bg-blue-800 p-3 rounded-sm font-semibold">Back to Desk</button>
+                
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl p-2 mt-2">
+            <h1 class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <br>
+            <h1>There are various ways to select elements in the DOM using JavaScript. The most common methods include selecting by ID, class name, tag name, name attribute, or using CSS selectors. The getElementById method targets a single element by its unique ID, while getElementsByClassName and getElementsByTagName select multiple elements based on their class or tag name, respectively. Additionally, the querySelector method allows selecting the first element matching a specific CSS selector, and querySelectorAll returns all matching elements. Selecting elements by their attributes or using complex CSS selectors is also possible with these methods.</h1>
+            
+
+        </section>
+        <section class="bg-white rounded-xl p-2 mt-2 ">
+            <h1 class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+            <br>
+            <h1>The difference between innerHTML, innerText, and textContent lies in how they interact with HTML elements and their contents. innerHTML retrieves or sets the entire HTML content of an element, including nested elements and their tags. It can also be used to inject HTML code. innerText returns only the visible text within an element, ignoring hidden elements and formatting the text as rendered by the browser. It respects CSS styles like display: none and visibility: hidden. On the other hand, textContent retrieves all text within an element, including text in hidden elements, but it returns plain text without parsing or rendering HTML tags. It is generally faster than innerText and safer than innerHTML when dealing with plain text.</h1>
+            
+
+        </section>
+        <section class="bg-white rounded-xl p-2 mt-2 ">
+            <h1 class="text-xl font-bold">Question-3: What is event delegation in the DOM?</h1>
+            <br>
+            <h1>Event delegation in the DOM is a technique where a single event listener is added to a parent element to manage events triggered by its child elements. Instead of adding separate event listeners to each child element, the parent listens for events that bubble up from its children. When an event occurs, it propagates up the DOM tree, allowing the parent to handle it. This technique improves performance, especially when dealing with a large number of elements or dynamically added elements, as it minimizes the number of event listeners required.</h1>
+            
+
+        </section>
+        <section class="bg-white rounded-xl p-2 mt-2 ">
+            <h1 class="text-xl font-bold">Question-4: What is event bubbling in the DOM?</h1>
+            <br>
+            <h1>Event bubbling is the process by which an event triggered on a child element propagates upward through its ancestors in the DOM tree. When an event occurs on a target element, it first triggers any event listeners attached directly to that element, then moves up to its parent element, and continues until it reaches the root of the document. This natural propagation mechanism allows higher-level elements to respond to events occurring on their children. Event bubbling is commonly utilized in event delegation to capture events from dynamically generated elements</h1>
+            
+
+        </section>
+        <section class="bg-white rounded-xl p-2 mt-2 ">
+            <h1 class="text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <br>
+            <h1>Creating, adding, and removing elements in JavaScript involves manipulating the DOM by dynamically generating new elements, inserting them into the document, or removing existing ones. New elements can be created by using methods that generate empty elements or clone existing ones. Once created, these elements can be inserted into the DOM at specified positions, such as appending them as children or inserting them before or after other elements. Removing elements is achieved by targeting the element and removing it directly or detaching it from its parent. These operations provide powerful control over the structure and content of a web page.</h1>
+            
+
+        </section>
+    </main>
+
+    <script src="second.js"></script>
+</body>
+</html>
