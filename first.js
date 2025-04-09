@@ -2,6 +2,11 @@ let cnt=20;
 let pnt=6;
 document.querySelectorAll('.btna').forEach(function(button) {
     button.addEventListener('click', function() {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
         
         button.disabled = true;
         button.classList.add('bg-gray-500');
